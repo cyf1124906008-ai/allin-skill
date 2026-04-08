@@ -2,7 +2,19 @@
 
 # 🎰 All-in.skill
 
-> *"I want to check the cards! ...🃏 Cards are fine. Going all-in is a wisdom."*
+**gamble smarter, not harder**
+
+<br>
+
+```
+  ╔═══╦═══╦═══╦═══╦═══╗
+  ║ A ║ K ║ Q ║ J ║ 10║   ← Can you read your cards?
+  ╚═══╩═══╩═══╩═══╩═══╝
+```
+
+<br>
+
+> *"I want to check the cards! ...Cards are fine. Going all-in is a wisdom."*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)](https://claude.ai/code)
@@ -10,37 +22,78 @@
 
 <br>
 
-💰 Investment · 💼 Career · 💕 Life decisions — **should you go all-in?**
+Investment · Career · Life decisions — **should you go all-in?**
 
-The God of Gamblers helps you read the cards: 📊 structured analysis + 🎭 multi-perspective debate + 🎯 one sharp verdict.<br>
+The God of Gamblers helps you read the cards: structured analysis + multi-perspective debate + one sharp verdict.<br>
 We don't tell you to "go" or "not go" — we help you **see the cards clearly before you bet**.
 
-**🔥 Bold when you should, cautious when you shouldn't.**
+**Bold when you should, cautious when you shouldn't.**
 
 <br>
 
-Provide your decision scenario and stake size 🎤<br>
-We break it down into a complete all-in analysis report:<br>
-**🔍 5-dimension card reading → 🎭 3-perspective showdown → 🎯 One-liner verdict**
+[**中文**](README.md) · [日本語](README_JA.md) · [한국어](README_KO.md) · [Español](README_ES.md)
+
+</div>
 
 <br>
 
-[🎲 Asset Types](#supported-asset-types) · [⚡ Install](#install) · [🎮 Usage](#usage) · [📖 Examples](#examples) · [🤝 Sponsor](#sponsor) · [**中文**](README.md) · [日本語](README_JA.md) · [한국어](README_KO.md) · [Español](README_ES.md)
+<div align="center">
+
+[Features](#-features) · [Install](#-install) · [Usage](#-usage) · [Examples](#-examples) · [Sponsor](#-sponsor-dataeyesai) · [Structure](#-project-structure)
 
 </div>
 
 ---
 
-## 🎲 Supported Asset Types
+## ✨ Features
 
-| Type | 🧠 Special Analysis | 💡 Highlight |
-|------|:------------------:|:------------:|
-| 🪙 Crypto | Halving cycle, Fear & Greed, on-chain data, regulation | Meme coins -20pts |
+### 🎲 Supported Asset Types
+
+| Type | Special Analysis | Highlight |
+|:----:|:---------------:|:---------:|
+| 🪙 Crypto | Halving cycle, Fear & Greed, on-chain data | Meme coins -20pts |
 | 📈 Stocks | Fundamentals, technicals, valuation, catalysts | A-share T+1 reminder |
 | 🏠 Real Estate | Rent-to-price, location, policy, liquidity | Developer risk check |
 | 📊 Funds / ETFs | Manager track record, fees, style drift | Active vs Passive |
 | 💎 Collectibles | Consensus risk, real value assessment | Don't touch what you don't know |
 | 🌍 Life Decisions | Reversibility, fear-setting, life stage fit | Type 1 / Type 2 |
+
+### 🃏 God of Gamblers Process
+
+Every decision goes through 5 steps:
+
+```text
+👁️ Read → 🧠 Identify → 🧮 Calculate → 🎭 Debate → 🎰 Verdict
+ Collect    Classify     5-dimension    3 advisors    Score+Conclusion
+```
+
+### 🎭 Three Table Advisors
+
+| Advisor | Mental Model | One-liner Style |
+|:------:|:----------:|:--------------:|
+| 🟢 **Optimist** | Peter Thiel · Zero to One | Where's the asymmetric upside? |
+| 🔴 **Pessimist** | Nassim Taleb · Black Swan | How big is the tail risk? |
+| 🟡 **Realist** | Charlie Munger · Inversion | If this fails, why? |
+
+### 📊 All-in Score
+
+| Score | Verdict | God of Gamblers says |
+|:-----:|:-------:|:-------------------:|
+| 🟢 **80-100** | Go all-in | Cards look great, push the chips |
+| 🟡 **60-79** | Worth a try, control position | Worth following, don't bet the house |
+| 🟠 **40-59** | Don't go, observe first | Test with small chips first |
+| 🔴 **0-39** | Don't go, fold now | Just fold, don't even look |
+
+### 🎬 Gambling Movie Easter Eggs
+
+| Meme | Source | When to Use |
+|:----:|:------:|:-----------:|
+| "Check the cards" | God of Gamblers | Info seems unreliable |
+| "Shine my shoes" | God of Gamblers 2 | Bad hand, still going all-in |
+| "Rub the cards" | Saint of Gamblers | Thinking you can control the outcome |
+| "Eat chocolate" 🍫 | God of Gamblers | Need to calm down |
+| "All-in is wisdom" | Internet meme | Sarcastic confidence |
+| "Bike to motorcycle" 🏍️ | Folklore | Full version: motorcycle to wheelchair |
 
 ---
 
@@ -48,14 +101,14 @@ We break it down into a complete all-in analysis report:<br>
 
 ### Claude Code
 
-> **💡 Tip**: Claude Code loads skills from `.claude/skills/` in the **git repo root**. Make sure you're in the right directory.
+> 💡 Claude Code loads skills from `.claude/skills/` in the **git repo root**.
 
 ```bash
-# 📦 Install to current project (run in git repo root)
+# Install to current project
 mkdir -p .claude/skills
 git clone https://github.com/cyf1124906008-ai/allin-skill .claude/skills/suoha
 
-# 🌐 Or install globally (available in all projects)
+# Or install globally (available in all projects)
 git clone https://github.com/cyf1124906008-ai/allin-skill ~/.claude/skills/suoha
 ```
 
@@ -69,159 +122,123 @@ git clone https://github.com/cyf1124906008-ai/allin-skill ~/.openclaw/workspace/
 
 ## 🎮 Usage
 
-```
+```text
 /allin
 ```
 
-> 💡 Chinese alias: You can also type `/梭哈` to trigger
+> 💡 Chinese alias: `/梭哈` also works
 
-Or just say: "Help me analyze whether I should go all-in on BTC"
+Answer 4 questions (Target · Stake · Worst case · Emotional state) to get your full analysis report.
 
-Answer 4 questions (🎯 Target · 💰 Stake · 💀 Worst case · 🧠 Emotional state) to get your full analysis report.
-
-### Commands
-
-| Command | 📝 Description |
-|---------|------|
-| `/allin` (alias `/梭哈`) | 🎰 Start a new all-in analysis |
-| `/allin-review` (alias `/梭哈复盘`) | 📜 Review past decisions and hit rate |
+| Command | Description |
+|:------:|:---------:|
+| `/allin` (alias `/梭哈`) | Start a new all-in analysis |
+| `/allin-review` (alias `/梭哈复盘`) | Review past decisions and hit rate |
+| Natural language | "Help me analyze should I go all-in on BTC" also triggers it |
 
 ---
 
 ## 📖 Examples
 
-> 💬 Input: `I want to go all-in 500k on BTC, I feel it's about to moon`
+> Input: `I want to go all-in 500k on BTC, I feel it's about to moon`
 
-```
+```text
 ━━━ 🎰 All-in Analysis Report ━━━
 
 📊 All-in Score: 62/100
 🎲 Verdict: Worth a try, but control your position
 
 ├─ 🔍 Card Reading
-│  ├─ 💰 Expected Return:
+│  ├─ 💰 Expected Return
 │  │  Bull (25%): 2x, +500k 🚀
-│  │  Neutral (45%): ±10%, break even 😐
+│  │  Neutral (45%): ±10%, break even
 │  │  Bear (30%): -40%, -200k 💀
 │  │  Expected Value: +55k
 │  │
-│  ├─ ⬇️ Downside Risk:
+│  ├─ ⬇️ Downside Risk
 │  │  Worst case: BTC drops 60%, lose 300k
 │  │  Reversibility: Partially reversible (can wait)
 │  │  Severity: Painful but survivable
 │  │
-│  ├─ 🧠 Emotion Check:
-│  │  ⚠️ Detected "I feel it's about to moon"
-│  │  Last time you went with your gut, what happened? 🤔
+│  └─ 🧠 Emotion Check
+│     ⚠️ Detected "I feel it's about to moon"
+│     Last time you went with your gut, what happened? 🤔
 
 ├─ 🎭 Three Table Advisors
-│  ├─ 🟢 Optimist: BTC halving cycle + ETF inflows...
-│  ├─ 🔴 Pessimist: You "feel" it's going to moon while
-│  │  macro rates are "feeling" like going up too... 😏
-│  └─ 🟡 Realist: Direction is right, but 500k full position
-│      is too heavy...
+│  ├─ 🟢 Optimist: BTC halving cycle + ETF inflows, solid mid-term thesis
+│  ├─ 🔴 Pessimist: You "feel" it's going to moon while rates are "feeling" up too
+│  └─ 🟡 Realist: Direction is right, but 500k full position is too heavy
 
-├─ ✅ Top 3 Supporting Reasons
-├─ ❌ Top 3 Against Reasons
-├─ ⚠️ Key Risk Points
+├─ ✅ Supporting Reasons
+│  1. BTC halving cycle historical pattern
+│  2. ETF approval brings institutional capital
+│  3. Long-term uptrend
 │
-├─ 📝 If you go, suggested strategy:
-│  💰 Position: 15-20% (75-100k)
-│  🛑 Stop loss: -25%
-│  📉 Scale in, don't dump all at once
+├─ ❌ Against Reasons
+│  1. "Feel it's about to moon" is emotion, not analysis
+│  2. 500k single-asset position is overconcentrated
+│  3. No stop-loss in place
 
-└─ 💡 3 Ways to Reduce Risk
-   1. 🧪 Start with 15%, add more if it rises
-   2. 🛑 Set stop-loss and stick to it
-   3. 🪑 Ask yourself: can I survive losing it all?
+├─ 📝 Suggested Strategy
+│  Position: 15-20% (75-100k)
+│  Stop loss: -25%
+│  Scale in, don't dump all at once
+
+└─ 💡 Risk Reduction
+   1. Start with 15%, add more if it rises
+   2. Set stop-loss and stick to it
+   3. Ask yourself: can I survive losing it all?
 
 ━━━━━━━━━━━━━━━━━
 🎯 God of Gamblers says:
-Put in 150-200k, don't all-in 500k. "I feel it's about to moon" 💸
-has lost more money than your entire bet. Check the cards first, 🃏
+Put in 150-200k, don't all-in 500k. "I feel it's about to moon"
+has lost more money than your entire bet. Check the cards first,
 then push the chips.
 ━━━━━━━━━━━━━━━━━
 ```
 
 ---
 
-## 🧩 Features
-
-### 🃏 5-Step God of Gamblers Process
-
-| Step | Description |
-|------|-------------|
-| 👁️ **Read Cards** | Collect 4 key inputs: target, stake, worst case, emotional state |
-| 🧠 **Identify Cards** | Auto-detect type: investment / life decision / mixed |
-| 🧮 **Calculate Cards** | 5 dimensions: return, downside, probability, opportunity cost, emotion |
-| 🎭 **Show Cards** | 3 perspectives: Optimist / Pessimist / Realist |
-| 🎰 **Reveal Cards** | All-in score + strategy + one-liner verdict |
-
-### 🎭 Three Table Advisors
-
-| Advisor | 🧠 Mental Model | 🎤 Style |
-|---------|-------------|--------|
-| 🟢 **Optimist** | Peter Thiel (Zero to One) | Where's the asymmetric upside? 🚀 |
-| 🔴 **Pessimist** | Nassim Taleb (Black Swan) | Where's the tail risk? 🦢 |
-| 🟡 **Realist** | Charlie Munger (Inversion) | If this fails, why? 🤔 |
-
-### 📊 All-in Score
-
-| Score | 🎲 Verdict | 🎤 God of Gamblers says |
-|-------|------|---------|
-| 🟢 80-100 | Go all-in | Cards look great, push the chips 💪 |
-| 🟡 60-79 | Worth a try, control position | Worth following, but don't bet the house ✋ |
-| 🟠 40-59 | Don't go, observe first | Test with small chips first 🔍 |
-| 🔴 0-39 | Don't go, fold now | Don't even look at the cards, just fold 🚫 |
-
-### 📜 Decision Logging + Review
-
-- 📁 Every analysis auto-saved locally
-- 🔄 `/梭哈复盘` to review history and hit rate
-- ✏️ Backfill actual results to track accuracy
-
----
-
-## 🤝 Sponsor
+## 🤝 Sponsor [Dataeyes.AI](https://dataeyes.ai/?promoter_code=nqg9bv83)
 
 <div align="center">
 
-### ⚡ [Dataeyes.AI](https://dataeyes.ai/?promoter_code=nqg9bv83) — AI Model API Aggregator
+### ⚡ [Dataeyes.AI](https://dataeyes.ai/?promoter_code=nqg9bv83)
 
-**🔑 One Key for All Major AI Models · Official Direct Full-Power API**
+**One Key for All Major AI Models · Official Direct Full-Power API**
+
+[Sign up now →](https://dataeyes.ai/?promoter_code=nqg9bv83)
 
 </div>
 
-| ✨ Feature | 📝 Description |
-|------------|--------|
-| 🌐 **All Models** | GPT-4o, Claude, Gemini, DeepSeek, Llama and all mainstream models |
-| 🔌 **Official Direct** | Full-power API, no relay, stable and reliable |
-| 🔑 **One Key** | No need to register at multiple providers, one key for all models |
-| 💰 **Transparent Pricing** | Unified billing, no hidden fees |
-| ⚡ **Ultra-Fast** | Low latency, production-ready |
-
-> 🎯 **Recommended pairing with 梭哈 skill**: Power your AI apps with Dataeyes.AI's full-power API — one key for all models.
->
-> 👉 [Sign up now at Dataeyes.AI](https://dataeyes.ai/?promoter_code=nqg9bv83)
+| | Feature | Description |
+|:---:|:-------:|:-----------:|
+| 🌐 | **All Models** | GPT-4o · Claude · Gemini · DeepSeek · Llama and more |
+| 🔌 | **Official Direct** | Full-power API, no relay, stable and reliable |
+| 🔑 | **One Key** | One API key for all models, no multi-site registration |
+| 💰 | **Transparent** | Unified billing, no hidden fees |
+| ⚡ | **Ultra-Fast** | Low latency, production-ready |
 
 ---
 
 ## 📁 Project Structure
 
-```
-suoha/
-├── SKILL.md                    # 🎰 Skill entry point
+Follows the [AgentSkills](https://agentskills.io) open standard:
+
+```text
+allin-skill/
+├── SKILL.md                    # 🎰 Entry point
 ├── prompts/                    # 📝 Prompt templates
-│   ├── intake.md               #   👁️ Card reading (info collection)
-│   ├── investment_analyzer.md  #   🧮 Investment analysis
-│   ├── life_decision_analyzer.md # 🌍 Life decision analysis
-│   ├── risk_analyzer.md        #   ⚠️ Risk assessment
-│   ├── perspective_advisor.md  #   🎭 Multi-perspective advisors
-│   └── report_builder.md       #   🎯 Report template + quote library
+│   ├── intake.md               #    Card reading (info collection)
+│   ├── investment_analyzer.md  #    Investment analysis
+│   ├── life_decision_analyzer.md #  Life decision analysis
+│   ├── risk_analyzer.md        #    Risk assessment
+│   ├── perspective_advisor.md  #    Multi-perspective advisors
+│   └── report_builder.md       #    Report template + quote library
 ├── references/                 # 📚 Reference materials
-│   ├── frameworks.md           #   🧠 8 decision frameworks
-│   ├── cases.md                #   📖 Classic all-in cases
-│   └── memes.md                #   🎬 Gambling movie meme dictionary
+│   ├── frameworks.md           #    8 decision frameworks
+│   ├── cases.md                #    Classic all-in cases
+│   └── memes.md                #    Gambling movie meme dictionary
 ├── records/                    # 📁 Decision logs (auto-generated)
 └── LICENSE
 ```
@@ -230,9 +247,9 @@ suoha/
 
 ## ⚠️ Disclaimer
 
-- 🎯 **The God of Gamblers only helps you read cards — the final call is yours**
+- 🎯 **Final call is yours**: analysis is a tool, decisions are your life
 - 🛡️ **Safety lines are non-negotiable**: borrowed money, leverage, life savings — we'll stop you
-- 📊 **Analysis quality depends on your input**: more specific info = clearer cards
+- 📊 **Better input = better analysis**: more specific info = clearer cards
 - 🎲 **Even the God of Gamblers misses sometimes**: not financial advice
 
 ---
@@ -240,10 +257,8 @@ suoha/
 ## 🙏 Credits
 
 Inspired by:
-- 🌟 **[colleague-skill](https://github.com/titanwings/colleague-skill)** — pioneered the "distill a person into AI Skill" pattern
-- 🌟 **[nuwa-skill](https://github.com/alchaincyf/nuwa-skill)** — using celebrity mental models for analysis
-
-This project follows the [AgentSkills](https://agentskills.io) open standard. Compatible with Claude Code and OpenClaw.
+- **[colleague-skill](https://github.com/titanwings/colleague-skill)** — pioneered "distill a person into AI Skill"
+- **[nuwa-skill](https://github.com/alchaincyf/nuwa-skill)** — celebrity mental models for analysis
 
 ---
 
