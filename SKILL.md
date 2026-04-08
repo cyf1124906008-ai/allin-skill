@@ -2,9 +2,7 @@
 name: suoha
 description: "All-in decision analyzer. Investment, career, life — analyze whether you should go all-in with structured frameworks, multi-perspective advisors, and a sharp final verdict. | 梭哈决策分析器。投资、事业、人生大事——该不该梭哈？系统分析、多视角碰撞、一句犀利结论。"
 argument-hint: "[决策描述 or 复盘]"
-version: "1.1.0"
 user-invocable: true
-allowed-tools: Read, Write, Edit, Bash
 ---
 
 # 梭哈.skill — 赌神的决策分析器
@@ -213,15 +211,17 @@ allowed-tools: Read, Write, Edit, Bash
 
 ## 辅助参考
 
-分析过程中可以参考以下文件获取决策框架和历史案例：
+分析过程中可以参考以下文件：
 
-- `${CLAUDE_SKILL_DIR}/references/frameworks.md` — 决策框架集合
-- `${CLAUDE_SKILL_DIR}/references/cases.md` — 经典梭哈案例
+- `${CLAUDE_SKILL_DIR}/references/frameworks.md` — 决策框架集合（凯利公式、期望值等）
+- `${CLAUDE_SKILL_DIR}/references/cases.md` — 经典梭哈案例（成功+失败+民间搞笑）
+- `${CLAUDE_SKILL_DIR}/references/memes.md` — 赌片梗词典（验牌、擦皮鞋、搓牌、吃巧克力等）
 
 **使用规则**：
-- 不要把框架和案例原文塞进报告，而是用它们的逻辑来支撑分析
-- 引用案例时说明"为什么这个案例跟你的情况相关"
-- 框架是算牌工具，不是万能公式——别生搬硬套
+- 框架和案例：用逻辑支撑分析，别原文照搬
+- 赌片梗：每份报告最多 2-3 个，自然融入，不要硬插
+- 梗后面必须跟实质分析——梗是调味品，干货才是主菜
+- 致命风险场景（借钱、杠杆）不玩梗
 
 ---
 
