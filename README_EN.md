@@ -213,8 +213,8 @@ then push the chips.
 
 | | Feature | Description |
 |:---:|:-------:|:-----------:|
-| 🌐 | **All Models** | GPT-4o · Claude · Gemini · DeepSeek · Llama and more |
-| 🔌 | **Official Direct** | Full-power API, no relay, stable and reliable |
+| 🌐 | **Multi-Model Aggregation** | GPT5.4 · Claude Opus 4.6 · Gemini 3.1 Pro · Nanobanbana Pro · DeepSeek · GLM-5.1 and more |
+| 🔌 | **One Platform** | Aggregate all mainstream models, switch on demand |
 | 🔑 | **One Key** | One API key for all models, no multi-site registration |
 | 💰 | **Transparent** | Unified billing, no hidden fees |
 | ⚡ | **Ultra-Fast** | Low latency, production-ready |

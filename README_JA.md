@@ -102,8 +102,8 @@ git clone https://github.com/cyf1124906008-ai/allin-skill ~/.openclaw/workspace/
 
 | | 特徴 | 説明 |
 |:---:|:----:|:----:|
-| 🌐 | **全モデル対応** | GPT-4o · Claude · Gemini · DeepSeek · Llamaなど |
-| 🔌 | **公式直結** | フルパワーAPI、中継なし、安定・信頼性抜群 |
+| 🌐 | **全モデル集約** | GPT5.4 · Claude Opus 4.6 · Gemini 3.1 Pro · Nanobanbana Pro · DeepSeek · GLM-5.1など |
+| 🔌 | **マルチモデル集約** | 全主要モデルを1プラットフォームに集約、必要に応じて切替 |
 | 🔑 | **1つのキー** | 複数登録不要、1つのキーで全モデル呼び出し可能 |
 | 💰 | **透明な価格** | 統一課金、隠し費用なし |
 | ⚡ | **超高速** | 低遅延、本番環境対応 |
