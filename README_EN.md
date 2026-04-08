@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎰 梭哈.skill
+# 🎰 All-in.skill
 
 > *"I want to check the cards! ...🃏 Cards are fine. Going all-in is a wisdom."*
 
@@ -53,16 +53,16 @@ We break it down into a complete all-in analysis report:<br>
 ```bash
 # 📦 Install to current project (run in git repo root)
 mkdir -p .claude/skills
-git clone https://github.com/cyf1124906008-ai/suoha-skill .claude/skills/suoha
+git clone https://github.com/cyf1124906008-ai/allin-skill .claude/skills/suoha
 
 # 🌐 Or install globally (available in all projects)
-git clone https://github.com/cyf1124906008-ai/suoha-skill ~/.claude/skills/suoha
+git clone https://github.com/cyf1124906008-ai/allin-skill ~/.claude/skills/suoha
 ```
 
 ### OpenClaw
 
 ```bash
-git clone https://github.com/cyf1124906008-ai/suoha-skill ~/.openclaw/workspace/skills/suoha
+git clone https://github.com/cyf1124906008-ai/allin-skill ~/.openclaw/workspace/skills/suoha
 ```
 
 ---
@@ -70,8 +70,10 @@ git clone https://github.com/cyf1124906008-ai/suoha-skill ~/.openclaw/workspace/
 ## 🎮 Usage
 
 ```
-/梭哈
+/allin
 ```
+
+> 💡 Chinese alias: You can also type `/梭哈` to trigger
 
 Or just say: "Help me analyze whether I should go all-in on BTC"
 
@@ -81,8 +83,8 @@ Answer 4 questions (🎯 Target · 💰 Stake · 💀 Worst case · 🧠 Emotion
 
 | Command | 📝 Description |
 |---------|------|
-| `/梭哈` | 🎰 Start a new all-in analysis |
-| `/梭哈复盘` | 📜 Review past decisions and hit rate |
+| `/allin` (alias `/梭哈`) | 🎰 Start a new all-in analysis |
+| `/allin-review` (alias `/梭哈复盘`) | 📜 Review past decisions and hit rate |
 
 ---
 

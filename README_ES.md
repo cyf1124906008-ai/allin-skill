@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎰 梭哈.skill
+# 🎰 All-in.skill
 
 > *"¡Quiero verificar las cartas!…🃏 Las cartas están bien. Ir all-in es una sabiduría."*
 
@@ -44,13 +44,13 @@ No te decimos "ve" o "no vayas" — te ayudamos a **ver las cartas con claridad 
 
 ```bash
 # 📦 Instalación global
-git clone https://github.com/cyf1124906008-ai/suoha-skill ~/.claude/skills/suoha
+git clone https://github.com/cyf1124906008-ai/allin-skill ~/.claude/skills/suoha
 ```
 
 ### OpenClaw
 
 ```bash
-git clone https://github.com/cyf1124906008-ai/suoha-skill ~/.openclaw/workspace/skills/suoha
+git clone https://github.com/cyf1124906008-ai/allin-skill ~/.openclaw/workspace/skills/suoha
 ```
 
 ---
@@ -58,15 +58,15 @@ git clone https://github.com/cyf1124906008-ai/suoha-skill ~/.openclaw/workspace/
 ## 🎮 Uso
 
 ```
-/梭哈
+/allin
 ```
 
 O simplemente di: "Ayúdame a analizar si debería ir all-in en BTC"
 
 | Comando | 📝 Descripción |
 |---------|--------|
-| `/梭哈` | 🎰 Iniciar nuevo análisis all-in |
-| `/梭哈复盘` | 📜 Revisar decisiones pasadas y tasa de acierto |
+| `/allin` (alias `/梭哈`) | 🎰 Iniciar nuevo análisis all-in |
+| `/allin-review` (alias `/梭哈复盘`) | 📜 Revisar decisiones pasadas y tasa de acierto |
 
 ---
 

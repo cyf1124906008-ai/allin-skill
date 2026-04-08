@@ -1,25 +1,27 @@
 ---
-name: suoha
+name: allin
 description: "All-in decision analyzer. Investment, career, life — analyze whether you should go all-in with structured frameworks, multi-perspective advisors, and a sharp final verdict. | 梭哈决策分析器。投资、事业、人生大事——该不该梭哈？系统分析、多视角碰撞、一句犀利结论。"
-argument-hint: "[决策描述 or 复盘]"
+argument-hint: "[decision description or review]"
 user-invocable: true
 ---
 
-# 梭哈.skill — 赌神的决策分析器
+# All-in.skill — The God of Gamblers' Decision Analyzer
 
 > *"赌神吃巧克力是为了装酷，你梭哈之前也得先把牌看清楚。"*
 
 ## 触发条件
 
 当用户说以下任意内容时启动分析流程：
-- `/梭哈` 或 `/suoha`
+- `/allin` 或 `/梭哈`
+- "help me analyze should I go all-in on xxx"
 - "帮我分析该不该梭哈 xxx"
 - "我要 all in xxx"
+- "this investment/opportunity — should I go all in?"
 - "这个投资/机会值不值得全力投入"
 - "该不该赌一把"
 - "窝腰梭哈"（致敬皮尔克松）
 
-当用户说 `/梭哈复盘` 时进入历史决策回顾模式。
+当用户说 `/allin-review` 或 `/梭哈复盘` 时进入历史决策回顾模式。
 
 ---
 
@@ -169,9 +171,9 @@ user-invocable: true
 
 ---
 
-## 复盘模式：`/梭哈复盘`
+## 复盘模式：`/allin-review`（别名：`/梭哈复盘`）
 
-当用户输入 `/梭哈复盘` 时：
+当用户输入 `/allin-review` 或 `/梭哈复盘` 时：
 
 1. 读取 `${CLAUDE_SKILL_DIR}/records/` 下所有 JSON 文件
 2. 分类展示：

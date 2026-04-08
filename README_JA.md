@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎰 梭哈.skill
+# 🎰 All-in.skill
 
 > *"カードを確認したい！…🃏 カードに問題なし。オールインは知恵である。"*
 
@@ -44,13 +44,13 @@
 
 ```bash
 # 📦 グローバルインストール
-git clone https://github.com/cyf1124906008-ai/suoha-skill ~/.claude/skills/suoha
+git clone https://github.com/cyf1124906008-ai/allin-skill ~/.claude/skills/suoha
 ```
 
 ### OpenClaw
 
 ```bash
-git clone https://github.com/cyf1124906008-ai/suoha-skill ~/.openclaw/workspace/skills/suoha
+git clone https://github.com/cyf1124906008-ai/allin-skill ~/.openclaw/workspace/skills/suoha
 ```
 
 ---
@@ -58,15 +58,15 @@ git clone https://github.com/cyf1124906008-ai/suoha-skill ~/.openclaw/workspace/
 ## 🎮 使い方
 
 ```
-/梭哈
+/allin
 ```
 
 または「BTCにオールインすべきか分析して」と入力
 
 | コマンド | 📝 説明 |
 |----------|------|
-| `/梭哈` | 🎰 新しいオールイン分析を開始 |
-| `/梭哈复盘` | 📜 過去の決定と的中率を確認 |
+| `/allin`（別名 `/梭哈`） | 🎰 新しいオールイン分析を開始 |
+| `/allin-review`（別名 `/梭哈复盘`） | 📜 過去の決定と的中率を確認 |
 
 ---
 

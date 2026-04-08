@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎰 梭哈.skill
+# 🎰 All-in.skill
 
 > *"窝腰验牌！……🃏 牌没问题，梭哈是一种智慧。"*
 
@@ -53,16 +53,16 @@
 ```bash
 # 📦 安装到当前项目（在 git 仓库根目录执行）
 mkdir -p .claude/skills
-git clone https://github.com/cyf1124906008-ai/suoha-skill .claude/skills/suoha
+git clone https://github.com/cyf1124906008-ai/allin-skill .claude/skills/suoha
 
 # 🌐 或安装到全局（所有项目都能用）
-git clone https://github.com/cyf1124906008-ai/suoha-skill ~/.claude/skills/suoha
+git clone https://github.com/cyf1124906008-ai/allin-skill ~/.claude/skills/suoha
 ```
 
 ### OpenClaw
 
 ```bash
-git clone https://github.com/cyf1124906008-ai/suoha-skill ~/.openclaw/workspace/skills/suoha
+git clone https://github.com/cyf1124906008-ai/allin-skill ~/.openclaw/workspace/skills/suoha
 ```
 
 ---
@@ -72,8 +72,10 @@ git clone https://github.com/cyf1124906008-ai/suoha-skill ~/.openclaw/workspace/
 在 Claude Code 中输入：
 
 ```
-/梭哈
+/allin
 ```
+
+> 💡 中文别名：也可以输入 `/梭哈` 触发
 
 回答 4 个问题（🎯 梭哈什么 · 💰 筹码多大 · 💀 最坏情况 · 🧠 当前状态），生成完整分析报告。
 
@@ -81,9 +83,9 @@ git clone https://github.com/cyf1124906008-ai/suoha-skill ~/.openclaw/workspace/
 
 | 命令 | 📝 说明 |
 |------|------|
-| `/梭哈` | 🎰 开始新的梭哈分析 |
+| `/allin`（别名 `/梭哈`） | 🎰 开始新的梭哈分析 |
 | `/{投资标的}` | 💬 直接说"帮我分析该不该梭哈 BTC"也能触发 |
-| `/梭哈复盘` | 📜 查看历史决策记录和赌神命中率 |
+| `/allin-review`（别名 `/梭哈复盘`） | 📜 查看历史决策记录和赌神命中率 |
 
 ---
 
@@ -227,7 +229,7 @@ git clone https://github.com/cyf1124906008-ai/suoha-skill ~/.openclaw/workspace/
 ### 📜 决策记录 + 复盘
 
 - 📁 每次分析自动保存到本地
-- 🔄 `/梭哈复盘` 查看历史记录和赌神命中率
+- 🔄 `/allin-review`（别名 `/梭哈复盘`）查看历史记录和赌神命中率
 - ✏️ 支持回填实际结果，验证分析准确率
 
 ### 🎬 赌片梗彩蛋

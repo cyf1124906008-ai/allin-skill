@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎰 梭哈.skill
+# 🎰 All-in.skill
 
 > *"카드를 확인하겠습니다!…🃏 카드 이상 없습니다. 올인은 지혜입니다."*
 
@@ -44,13 +44,13 @@
 
 ```bash
 # 📦 전역 설치
-git clone https://github.com/cyf1124906008-ai/suoha-skill ~/.claude/skills/suoha
+git clone https://github.com/cyf1124906008-ai/allin-skill ~/.claude/skills/suoha
 ```
 
 ### OpenClaw
 
 ```bash
-git clone https://github.com/cyf1124906008-ai/suoha-skill ~/.openclaw/workspace/skills/suoha
+git clone https://github.com/cyf1124906008-ai/allin-skill ~/.openclaw/workspace/skills/suoha
 ```
 
 ---
@@ -58,15 +58,15 @@ git clone https://github.com/cyf1124906008-ai/suoha-skill ~/.openclaw/workspace/
 ## 🎮 사용법
 
 ```
-/梭哈
+/allin
 ```
 
 또는 "BTC에 올인해야 할지 분석해줘"라고 입력
 
 | 명령 | 📝 설명 |
 |------|--------|
-| `/梭哈` | 🎰 새로운 올인 분석 시작 |
-| `/梭哈复盘` | 📜 과거 결정 및 적중률 확인 |
+| `/allin`（별명 `/梭哈`） | 🎰 새로운 올인 분석 시작 |
+| `/allin-review`（별명 `/梭哈复盘`） | 📜 과거 결정 및 적중률 확인 |
 
 ---
 
