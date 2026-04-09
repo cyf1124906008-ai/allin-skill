@@ -22,12 +22,25 @@
 
 <br>
 
-Investment · Career · Life decisions — **should you go all-in?**
+You "felt it was going to moon" and went all-in. Now you're the one holding the bag?
 
-The God of Gamblers helps you read the cards: structured analysis + multi-perspective debate + one sharp verdict.<br>
-We don't tell you to "go" or "not go" — we help you **see the cards clearly before you bet**.
+You "risked it for the biscuit" and ended up with neither the risk nor the biscuit?
+
+You said "this time is different" — and it was. You lost more than last time.
+
+You FOMO-bought at 3 AM, woke up, and realized you bought the top. You were the only one up there.
+
+You followed a "insider tip" and the only thing insider was your wallet getting cleaned out from the inside?
+
+Relax. The God of Gamblers is here.
 
 **Bold when you should, cautious when you shouldn't.**
+
+<br>
+
+Provide your decision scenario and stake size<br>
+We break it down into a complete all-in analysis:<br>
+**🔍 5-dimension card reading → 🎭 3-perspective showdown → 🎯 One-liner verdict**
 
 <br>
 

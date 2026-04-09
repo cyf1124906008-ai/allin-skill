@@ -22,9 +22,15 @@
 
 <br>
 
-Inversión · Carrera · Decisiones de vida — **¿deberías ir all-in?**
+"Sentí que iba a subir" y fuiste all-in. Lo único que subió fue tu ritmo cardíaco
 
-El Dios del Juego te ayuda a leer las cartas: análisis estructurado + debate multiperspectiva + un veredicto afilado
+Dijiste "esta vez es diferente" — y fue diferente: perdiste más que la última vez
+
+Compraste con FOMO a las 3 AM, despertaste y estabas solo en la cima
+
+Creíste en un "tip interno" y lo único interno fue tu cartera siendo vaciada
+
+Tranquilo. El Dios del Juego ha llegado.
 
 **Audaz cuando debes, cauteloso cuando no.**
 
