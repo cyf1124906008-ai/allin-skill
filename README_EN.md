@@ -119,17 +119,37 @@ Every decision goes through 5 steps:
 ```bash
 # Install to current project
 mkdir -p .claude/skills
-git clone https://github.com/cyf1124906008-ai/allin-skill .claude/skills/suoha
+git clone https://github.com/cyf1124906008-ai/allin-skill .claude/skills/allin
 
 # Or install globally (available in all projects)
-git clone https://github.com/cyf1124906008-ai/allin-skill ~/.claude/skills/suoha
+git clone https://github.com/cyf1124906008-ai/allin-skill ~/.claude/skills/allin
 ```
 
 ### OpenClaw
 
 ```bash
-git clone https://github.com/cyf1124906008-ai/allin-skill ~/.openclaw/workspace/skills/suoha
+git clone https://github.com/cyf1124906008-ai/allin-skill ~/.openclaw/workspace/skills/allin
 ```
+
+### 📰 Connect NewsNow for Real-time Financial News (Optional)
+
+Install [newsnow-mcp-server](https://github.com/ourongxing/newsnow-mcp-server) to automatically feed real-time financial news into allin analysis:
+
+```json
+{
+  "mcpServers": {
+    "newsnow": {
+      "command": "npx",
+      "args": ["-y", "newsnow-mcp-server"],
+      "env": {
+        "BASE_URL": "https://newsnow.busiyi.world"
+      }
+    }
+  }
+}
+```
+
+Replace `BASE_URL` with your own NewsNow deployment. Supports 40+ news sources including CLS, Wallstreet CN, Xueqiu, Jin10, Gelonghui, Fastbull and more.
 
 ---
 

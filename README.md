@@ -119,17 +119,37 @@
 ```bash
 # 安装到当前项目
 mkdir -p .claude/skills
-git clone https://github.com/cyf1124906008-ai/allin-skill .claude/skills/suoha
+git clone https://github.com/cyf1124906008-ai/allin-skill .claude/skills/allin
 
 # 或安装到全局（所有项目都能用）
-git clone https://github.com/cyf1124906008-ai/allin-skill ~/.claude/skills/suoha
+git clone https://github.com/cyf1124906008-ai/allin-skill ~/.claude/skills/allin
 ```
 
 ### OpenClaw
 
 ```bash
-git clone https://github.com/cyf1124906008-ai/allin-skill ~/.openclaw/workspace/skills/suoha
+git clone https://github.com/cyf1124906008-ai/allin-skill ~/.openclaw/workspace/skills/allin
 ```
+
+### 📰 接入 NewsNow 实时财经新闻（可选）
+
+安装 [newsnow-mcp-server](https://github.com/ourongxing/newsnow-mcp-server) 后，allin 会自动获取实时财经快讯作为分析数据：
+
+```json
+{
+  "mcpServers": {
+    "newsnow": {
+      "command": "npx",
+      "args": ["-y", "newsnow-mcp-server"],
+      "env": {
+        "BASE_URL": "https://newsnow.busiyi.world"
+      }
+    }
+  }
+}
+```
+
+`BASE_URL` 可换成你自己部署的 NewsNow 地址。支持 40+ 新闻源，包括财联社、华尔街见闻、雪球、金十数据、格隆汇等。
 
 ---
 

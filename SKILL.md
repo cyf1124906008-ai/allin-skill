@@ -99,13 +99,28 @@ Alright, let me see your cards first:
 如果用户分析的是投资标的（加密货币、股票、房产等），尝试联网获取实时数据：
 
 按以下优先级使用可用工具：
-1. `/web-access` skill（如果已安装）
-2. WebSearch 工具（如果可用）
-3. MCP 搜索工具（如果可用）
-4. 以上都没有 → 跳过搜索，直接基于用户提供的信息分析，不卡住
+1. **newsnow MCP server**（如果已配置）— 获取财经快讯和热门新闻，优先使用
+2. `/web-access` skill（如果已安装）
+3. WebSearch 工具（如果可用）
+4. MCP 搜索工具（如果可用）
+5. 以上都没有 → 跳过搜索，直接基于用户提供的信息分析，不卡住
 
-搜索策略（尽量一次搜够，最多搜2次）：
-- 加密货币：`"{币名} price {当前月份} {当前年份}"` — 价格、走势、恐贪指数、新闻一次出
+**newsnow MCP 用法**：
+如果环境中配置了 newsnow MCP server（工具名为 `get_hottest_latest_news`），按标的类型调用：
+
+| 标的类型 | 推荐新闻源 ID | 说明 |
+|----------|--------------|------|
+| 加密货币 | `cls-telegraph` + `jin10` | 财联社电报 + 金十数据 |
+| A股/港股 | `cls-telegraph` + `xueqiu-hotstock` | 财联社电报 + 雪球热门 |
+| 美股 | `wallstreetcn-quick` + `fastbull-express` | 华尔街见闻 + 法布财经 |
+| 通用财经 | `gelonghui` + `wallstreetcn-hot` | 格隆汇 + 华尔街见闻热门 |
+
+- 调用时用 `get_hottest_latest_news`，参数 `id` 填上表中的 ID，`count` 设 5-10 条
+- 搜到的新闻放在报告的"实时数据快照"区块
+- MCP 不可用 → 降级到 WebSearch，不报错不停顿
+
+**WebSearch 搜索策略**（newsnow 不可用时的降级方案，最多搜2次）：
+- 加密货币：`"{币名} price {当前月份} {当前年份}"`
 - 股票：`"{股票名/代码} stock price {当前月份} {当前年份}"`
 - 房产：`"{城市} 房价 {当前年份} 政策"`
 - 搜索不够再补一次，别超过2次

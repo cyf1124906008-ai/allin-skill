@@ -60,14 +60,34 @@
 ### Claude Code
 
 ```bash
-git clone https://github.com/cyf1124906008-ai/allin-skill ~/.claude/skills/suoha
+git clone https://github.com/cyf1124906008-ai/allin-skill ~/.claude/skills/allin
 ```
 
 ### OpenClaw
 
 ```bash
-git clone https://github.com/cyf1124906008-ai/allin-skill ~/.openclaw/workspace/skills/suoha
+git clone https://github.com/cyf1124906008-ai/allin-skill ~/.openclaw/workspace/skills/allin
 ```
+
+### 📰 NewsNow 실시간 금융 뉴스 연동 (선택사항)
+
+[newsnow-mcp-server](https://github.com/ourongxing/newsnow-mcp-server) 를 설치하면 allin 분석에 실시간 금융 뉴스가 자동으로 반영됩니다：
+
+```json
+{
+  "mcpServers": {
+    "newsnow": {
+      "command": "npx",
+      "args": ["-y", "newsnow-mcp-server"],
+      "env": {
+        "BASE_URL": "https://newsnow.busiyi.world"
+      }
+    }
+  }
+}
+```
+
+`BASE_URL` 을 본인의 NewsNow 배포 주소로 변경 가능. 재련사, 월스트리트견문, 쉐치우, 금10데이터 등 40+ 뉴스 소스 지원.
 
 ---
 

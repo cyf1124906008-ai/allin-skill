@@ -60,14 +60,34 @@ Tranquilo. El Dios del Juego ha llegado.
 ### Claude Code
 
 ```bash
-git clone https://github.com/cyf1124906008-ai/allin-skill ~/.claude/skills/suoha
+git clone https://github.com/cyf1124906008-ai/allin-skill ~/.claude/skills/allin
 ```
 
 ### OpenClaw
 
 ```bash
-git clone https://github.com/cyf1124906008-ai/allin-skill ~/.openclaw/workspace/skills/suoha
+git clone https://github.com/cyf1124906008-ai/allin-skill ~/.openclaw/workspace/skills/allin
 ```
+
+### 📰 Conectar NewsNow para noticias financieras en tiempo real (Opcional)
+
+Instala [newsnow-mcp-server](https://github.com/ourongxing/newsnow-mcp-server) para alimentar automáticamente noticias financieras en el análisis de allin：
+
+```json
+{
+  "mcpServers": {
+    "newsnow": {
+      "command": "npx",
+      "args": ["-y", "newsnow-mcp-server"],
+      "env": {
+        "BASE_URL": "https://newsnow.busiyi.world"
+      }
+    }
+  }
+}
+```
+
+Cambia `BASE_URL` por tu propia dirección de NewsNow. Soporta 40+ fuentes de noticias incluyendo CLS, Wallstreet CN, Xueqiu, Jin10, Gelonghui y más.
 
 ---
 
