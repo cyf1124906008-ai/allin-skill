@@ -147,6 +147,6 @@ Sigue el estándar abierto [AgentSkills](https://agentskills.io). Compatible con
 
 <div align="center">
 
-MIT License © [cyf1124906008-ai](https://github.com/cyf1124906008-ai)
+MIT License © [cyf1124906008-ai (克劳德)](https://github.com/cyf1124906008-ai)
 
 </div>
