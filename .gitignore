@@ -1,3 +1,4 @@
-records/
-*.json
-!.gitkeep
+# Decision records (auto-generated per analysis)
+records/*.json
+# Keep the directory
+!records/.gitkeep
