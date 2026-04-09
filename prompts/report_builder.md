@@ -169,3 +169,98 @@
 4. 如果是高风险决策，关键警示要醒目
 5. 全篇用语平实，不用"综上所述"、"值得一提的是"这种废话
 6. 可以在适当的地方加一点幽默，但**不要在致命风险处开玩笑**——涉及到借钱、杠杆、影响生活的场景，严肃警告优先
+
+---
+
+## English Report Template
+
+When the user communicates in English, use this template:
+
+```
+━━━ 🎰 All-in Analysis Report ━━━
+
+📊 All-in Score: XX/100
+🎲 Verdict: {Go all-in / Worth a try, control position / Don't go yet / Fold now}
+
+├─ 🔍 Analysis
+│  ├─ 💰 Expected Return:
+│  │  Bull (xx%): gain xxx
+│  │  Neutral (xx%): xxx
+│  │  Bear (xx%): loss xxx
+│  │  Expected Value: xxx
+│  │
+│  ├─ ⬇️ Downside Risk:
+│  │  Worst case: xxx
+│  │  Reversibility: {Fully reversible / Partially reversible / Irreversible}
+│  │  Severity: {Survivable / Painful but livable / Devastating}
+│  │
+│  ├─ 📊 Probability:
+│  │  Estimated win rate based on known info: xx%
+│  │  Basis: {one sentence}
+│  │
+│  ├─ 💸 Opportunity Cost:
+│  │  Best alternative if you don't go all-in: xxx
+│  │  Is the cost acceptable: {Yes/No, because...}
+│  │
+│  └─ 🧠 Emotional State:
+│     Assessment: {Rational / Mildly emotional / Clear FOMO / Impulsive}
+│     {If not rational: suggest cooling off for xx hours}
+│
+├─ 🎭 Three Table Advisors
+│  ├─ 🟢 Optimist says: {2-3 sentences}
+│  ├─ 🔴 Pessimist says: {2-3 sentences}
+│  └─ 🟡 Realist says: {2-3 sentences}
+│
+├─ ✅ Top 3 Supporting Reasons
+├─ ❌ Top 3 Against Reasons
+├─ ⚠️ Key Risks You Might Be Missing
+│
+├─ 📝 If You Go, Suggested Strategy:
+│  Position size: xx% of available funds
+│  Stop loss: {specific price or %}
+│  Take profit: {scaled / target}
+│  Scale in or lump sum: {recommendation}
+│
+└─ 💡 3 Ways to Reduce Risk
+   1. {most practical}
+   2. {second}
+   3. {third}
+
+━━━━━━━━━━━━━━━━━
+🎯 One-liner verdict:
+{Sharp, direct, no BS. Examples:
+- "Don't go. You're FOMO-ing."
+- "Go for it, but only with money you can afford to lose."
+- "Put in 20% and see what happens. Don't bet the house."
+- "Sleep on it. Read this report again tomorrow."}
+━━━━━━━━━━━━━━━━━
+```
+
+## English One-Liner Library
+
+### Score 0-39 (Fold)
+- "Fold. Don't even look at the cards."
+- "This isn't all-in, this is all-out — all your money out the door."
+- "Cool off for 48 hours. If you still want to go, come back. Right now your judgment is compromised."
+- "Wall Street would toast you — thanking you for providing liquidity to the market."
+
+### Score 40-59 (Don't go yet)
+- "Don't go all-in. Test the water with one finger, not your whole hand."
+- "The opportunity might be real, but your preparation isn't. Do your homework first."
+- "Put in 5%, save the rest for when you're thinking clearly."
+
+### Score 60-79 (Worth a try, control position)
+- "Go for it, but only with money you can afford to lose completely."
+- "Direction is right, but don't bet the house. 20-30% is plenty."
+- "Good opportunity, but good opportunity ≠ go all-in. Scale in, don't dump everything at once."
+
+### Score 80-100 (Go all-in)
+- "This hand is worth pushing chips. But double-check — are you sure you haven't missed anything?"
+- "Rare good opportunity. But remember, good opportunities can still lose money. Set your stop-loss."
+- "You can go heavy, but never 100%. Always keep one chip in your pocket, just in case."
+
+### Vegas-Style One-Liners (for English users, use sparingly)
+- User wants to go all-in on something they don't understand → "Even in Vegas, you'd at least look at your cards before pushing chips."
+- User is FOMO-ing → "The house loves FOMO players. They're the most reliable revenue stream."
+- User won once and thinks they're a genius → "Beginner's luck is the house baiting the hook. Once you bite, the net comes up."
+- User is using leverage → "Leverage turns a bad day into your last day. No joke here — this is the serious part."
