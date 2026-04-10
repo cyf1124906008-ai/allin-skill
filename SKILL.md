@@ -99,20 +99,13 @@ Alright, let me see your cards first:
 如果用户分析的是投资标的（加密货币、股票、房产等），尝试联网获取实时数据：
 
 按以下优先级使用可用工具：
-1. **newsnow API 直连**（开箱即用，无需额外配置）
-2. **newsnow MCP server**（如果已配置 `get_hottest_latest_news` 工具）
+1. **newsnow MCP server**（如果已配置 `get_hottest_latest_news` 工具）— 跨平台通用
+2. **newsnow API 直连**（如果有 Bash/终端工具）— Claude Code 适用
 3. `/web-access` skill（如果已安装）
 4. WebSearch 工具（如果可用）
 5. 以上都没有 → 跳过搜索，直接基于用户提供的信息分析，不卡住
 
-**newsnow API 直连用法（优先方案，开箱即用）**：
-直接用 Bash curl 调用 newsnow API 获取财经快讯，无需安装任何 MCP server：
-
-```bash
-curl -s -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" "https://newsnow.busiyi.world/api/s?id=cls-telegraph"
-```
-
-按标的类型选择新闻源：
+**财经新闻源 ID 对照表**（所有 newsnow 方式共用）：
 
 | 标的类型 | 推荐新闻源 ID | 说明 |
 |----------|--------------|------|
@@ -121,15 +114,19 @@ curl -s -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/53
 | 美股 | `wallstreetcn-quick` + `fastbull-express` | 华尔街见闻 + 法布财经 |
 | 通用财经 | `gelonghui` + `wallstreetcn-hot` | 格隆汇 + 华尔街见闻热门 |
 
+**方案 A：newsnow MCP server**（推荐，跨平台通用）：
+如果环境中有 `get_hottest_latest_news` 工具，直接调用：
+- 参数 `id` 填上表中的源 ID，`count` 设 5
+- 每个标的类型调 1-2 个源即可
+
+**方案 B：newsnow API 直连**（Claude Code 等有 Bash 的环境）：
+```bash
+curl -s -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" "https://newsnow.busiyi.world/api/s?id=cls-telegraph"
+```
 - API 返回 JSON，格式为 `{"items": [{"title": "...", "url": "...", ...}]}`
-- 每个源取前 5 条新闻即可，最多调 2 个源
-- 搜到的新闻放在报告的"实时数据快照"区块
-- API 调不通 → 降级到下一种工具，不报错不停顿
+- 每个源取前 5 条新闻，最多调 2 个源
 
-**newsnow MCP 用法**（已配置 MCP server 时的备选方案）：
-如果环境中有 `get_hottest_latest_news` 工具，也可以直接调用，参数 `id` 填上表中的 ID，`count` 设 5。
-
-**WebSearch 搜索策略**（以上都不可用时的最终降级方案，最多搜2次）：
+**方案 C：WebSearch**（以上都不可用时的最终降级方案，最多搜2次）：
 - 加密货币：`"{币名} price {当前月份} {当前年份}"`
 - 股票：`"{股票名/代码} stock price {当前月份} {当前年份}"`
 - 房产：`"{城市} 房价 {当前年份} 政策"`
