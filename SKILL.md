@@ -96,41 +96,34 @@ Alright, let me see your cards first:
 参考 `${CLAUDE_SKILL_DIR}/prompts/risk_analyzer.md` 进行风险评估。
 
 **联网搜索（有网就搜，没网就跳过）**：
-如果用户分析的是投资标的（加密货币、股票、房产等），尝试联网获取实时数据：
+如果用户分析的是投资标的（加密货币、股票、房产等），尝试联网获取实时数据。
 
-按以下优先级使用可用工具：
-1. **newsnow MCP server**（如果已配置 `get_hottest_latest_news` 工具）— 跨平台通用
-2. **newsnow API 直连**（如果有 Bash/终端工具）— Claude Code 适用
-3. `/web-access` skill（如果已安装）
-4. WebSearch 工具（如果可用）
-5. 以上都没有 → 跳过搜索，直接基于用户提供的信息分析，不卡住
+**使用当前环境中可用的工具，按以下顺序尝试，哪个能用就用哪个，不报错不停顿**：
 
-**财经新闻源 ID 对照表**（所有 newsnow 方式共用）：
+1. **WebSearch** — 开箱即用，所有环境通用
+2. **newsnow MCP**（如果已配置 `get_hottest_latest_news`）— 财经快讯增强
+3. **Bash curl**（如果有终端工具）— 直接调 newsnow API
+4. `/web-access` skill（如果已安装）
+5. 以上都没有 → 跳过搜索，直接分析
 
-| 标的类型 | 推荐新闻源 ID | 说明 |
-|----------|--------------|------|
+**WebSearch 搜索策略**（最多搜2次）：
+- 加密货币：`"{币名} price {当前月份} {当前年份}"`
+- 股票：`"{股票名/代码} stock price {当前月份} {当前年份}"`
+- 房产：`"{城市} 房价 {当前年份} 政策"`
+- 搜索不够再补一次，别超过2次
+
+**newsnow 财经快讯**（如果环境支持 MCP 或 Bash）：
+
+| 标的类型 | 推荐源 ID | 说明 |
+|----------|----------|------|
 | 加密货币 | `cls-telegraph` + `jin10` | 财联社电报 + 金十数据 |
 | A股/港股 | `cls-telegraph` + `xueqiu-hotstock` | 财联社电报 + 雪球热门 |
 | 美股 | `wallstreetcn-quick` + `fastbull-express` | 华尔街见闻 + 法布财经 |
 | 通用财经 | `gelonghui` + `wallstreetcn-hot` | 格隆汇 + 华尔街见闻热门 |
 
-**方案 A：newsnow MCP server**（推荐，跨平台通用）：
-如果环境中有 `get_hottest_latest_news` 工具，直接调用：
-- 参数 `id` 填上表中的源 ID，`count` 设 5
-- 每个标的类型调 1-2 个源即可
-
-**方案 B：newsnow API 直连**（Claude Code 等有 Bash 的环境）：
-```bash
-curl -s -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" "https://newsnow.busiyi.world/api/s?id=cls-telegraph"
-```
-- API 返回 JSON，格式为 `{"items": [{"title": "...", "url": "...", ...}]}`
-- 每个源取前 5 条新闻，最多调 2 个源
-
-**方案 C：WebSearch**（以上都不可用时的最终降级方案，最多搜2次）：
-- 加密货币：`"{币名} price {当前月份} {当前年份}"`
-- 股票：`"{股票名/代码} stock price {当前月份} {当前年份}"`
-- 房产：`"{城市} 房价 {当前年份} 政策"`
-- 搜索不够再补一次，别超过2次
+- MCP：用 `get_hottest_latest_news`，参数 `id` 填源 ID，`count` 设 5
+- Bash：`curl -s -H "User-Agent: Mozilla/5.0" "https://newsnow.busiyi.world/api/s?id=cls-telegraph"`
+- 每个源取前 5 条，最多 2 个源
 
 搜索规则：
 - 搜到的数据放在报告开头的"实时数据快照"区块
